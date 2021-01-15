@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+.contents{
+	margin-top: 0px !important;
+}
+
+/***********************************
+お申し込み ボタンの表示非表示
+************************************/
+
+.AppBtnBox{
+	text-align: center;
+	width: 100%;
+}
+
+.AppBtnBox button,
+.AppBtnBox input{
+    background-color: #54CA30 !important;
+	background-image: url(bgbtn.png) !important;
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-size:100% 100%;
+	font-weight: bold;
+	color: #FFF;
+	-moz-border-radius: 5px;/* Firefox用 */
+	-webkit-border-radius: 5px;/* Safari,Google Chrome用 */
+	-khtml-border-radius: 5px;/* for Old Safari, KHTML */
+	border-radius: 5px;/* for CSS3 */
+	position:relative;/* PIEを動作させるために追加 */
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor:pointer;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.AppBtnBox button:hover,
+.AppBtnBox input:hover{
+	opacity:0.5;
+}
+
+/***********************************
+ここからキャンペーン内容
+************************************/
+
+#campaignBox{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#campaignBox .pbox{
+	position: relative;
+    overflow: hidden;
+	font-size: 0px;
+	line-height: 0px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+/***********************************
+募集要項&各展示場情報タイトル
+************************************/
+
+h2.st{
+    margin-bottom: 10px;
+    font-size: 12px;    
+    display: block;
+    color: #ffffff;
+}
+
+h2.st strong{
+    font-weight: bold !important;
+    display: inline-block !important;
+    color: #ffffff;
+}
+        
+h2.st span{
+    color: #ffffff;
+}
+
+
+/***********************************
+募集要項
+************************************/
+
+#aePoint strong{      
+    margin-bottom: 10px;
+    display: block;
+}
+
+#aePoint dl{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+}
+
+#aePoint dl dt,
+#aePoint dl dd{
+    display: block;
+    float: left;
+}
+
+/***********************************
+各展示場情報
+************************************/
+
+#inquiry dl{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+}
+
+#inquiry dl dt{
+    font-weight: bold;
+}
+
+#inquiry dl dt,
+#inquiry dl dd{
+    display: block;
+    float: left;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #CCC;
+    text-align: left;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+}
+
+#inquiry dl dd.add{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#inquiry dl dd.tel{
+    font-weight: bold;
+}
+
+#inquiry dl dd.tel .mail{
+    display: none;
+}
+
+#inquiry dl dd strong{
+    color: #FF0004;
+}
+
+/*PC CSS -content Layout-*/
+@media print, screen and (min-width:769px){
+
+    .pc{
+        display: block;
+    }
+    
+    .sp{
+        display: none;
+    }
+
+
+/***********************************
+キャンペーンメインボックス
+************************************/
+
+    #campaignBox{
+        width: 980px;
+    }
+
+    #campaignBox h2{
+        font-size: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+/***********************************
+キャンペーンヘッダー
+************************************/
+
+    #cpHeaderBox{
+        position: relative;
+    }
+
+    #cpHeaderBox h1{
+        display: block;
+    }
+
+/***********************************
+お申し込み ボタン
+************************************/
+
+    .AppBtnBox{
+        margin-bottom: 35px;
+        padding-top: 15px;
+    }
+
+	  .AppBtnBox button,
+    .AppBtnBox input{
+        font-size: 32px;
+        line-height: 70px;
+        width: 60%;
+    }
+
+    .AppBtnBox.hb{
+        margin-bottom: 0px!important;
+        padding-bottom: 12px!important;
+    }
+
+
+/***********************************
+募集要項&各展示場情報タイトル
+************************************/
+
+    h2.st{
+    }
+
+    h2.st strong{
+        font-size: 18px !important;
+        line-height: 40px;
+        padding-left: 10px;
+    }
+        
+    h2.st span{
+        font-size: 14px;
+        line-height: 40px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+
+/***********************************
+募集要項
+************************************/
+
+    #aePoint{
+    }
+
+    #aePoint strong{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #aePoint dl{
+        width: 980px;
+        margin-bottom: 30px;
+    }
+
+    #aePoint dl dt{
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: #CCC;
+        width: 150px;
+    }
+
+    #aePoint dl dd{
+        width: 787px;
+    }
+
+    #aePoint dl dt,
+    #aePoint dl dd{
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #CCC;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #CCC;
+        padding-right: 10px;
+    }
+    
+
+/***********************************
+各展示場情報
+************************************/
+
+    #inquiry{
+    }
+
+    #inquiry dl{
+        width: 980px;
+    }
+
+    #inquiry dl dt{
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: #CCC;
+    }
+
+    #inquiry dl dt,
+    #inquiry dl dd{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #inquiry dl dt.tname{
+        width: 190px;
+    }
+
+    #inquiry dl dd.add{
+        width: 365px;
+    }
+
+    #inquiry dl dd.tel{
+        width: 190px;
+        pointer-events: none;
+    }
+	
+    #inquiry dl dd.tel .telBox{	
+			  font-size: 16px !important;
+    }
+	
+    #inquiry dl dd.tel .mail{
+        display: none;
+    }
+
+    #inquiry dl dd.fax{
+        width: 190px;
+    }
+
+}
+
+
+/*SmartPhone CSS -content Layout-*/
+@media print, screen and (max-width:769px){
+
+    .pc{
+        display: none;
+    }
+    
+    .sp{
+        display: block;
+    }
+
+
+/***********************************
+キャンペーンメインボックス
+************************************/
+
+    #campaignBox{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #campaignBox img{
+        width: 100%;
+    }
+
+    #campaignBox h2{
+        font-size: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    
+/***********************************
+キャンペーンヘッダー
+************************************/
+
+    #cpHeaderBox{
+        margin-top: 1%;
+        font-size: 0px;
+        line-height: 0px;
+    }
+
+    #cpHeaderBox h1{
+        display: block;
+    }
+    
+        
+/***********************************
+お申し込み ボタン
+************************************/
+
+    .AppBtnBox{
+        margin-bottom: 25px;
+    }
+
+	  .AppBtnBox button,
+    .AppBtnBox input{
+        font-size: 20px;
+        line-height: 40px;
+        width: 100%;
+        font-weight: bold;
+    }
+        
+    .AppBtnBox.hb{
+        margin-bottom: 0px!important;
+        padding-bottom: 5px!important;
+    }
+
+
+/***********************************
+募集要項&各展示場情報タイトル
+************************************/
+
+    h2.st{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    h2.st strong{
+        font-size: 14px !important;        
+        padding-top: 5px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+        
+    h2.st span{
+        font-size: 12px;        
+        line-height: 16px;
+        display: block;
+    }
+    
+    
+/***********************************
+募集要項
+************************************/
+
+    #aePoint{
+    }
+
+    #aePoint strong{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #aePoint dl{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #aePoint dl dt{
+        font-weight: bold;
+        background-color: #B4B4B4;
+        color: #FFF;
+    }
+
+    #aePoint dl dd{
+    }
+
+    #aePoint dl dt,
+    #aePoint dl dd{
+        width: 98%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2%;
+    }
+        
+
+/***********************************
+各展示場情報
+************************************/
+
+    #inquiry{
+    }
+
+    #inquiry dl{
+        width: 100%;
+    }
+
+    #inquiry dl dt{
+        background-color: #B4B4B4;
+        color: #FFF;
+    }
+
+    #inquiry dl dt,
+    #inquiry dl dd{
+        width: 98%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2%;
+    }
+
+    #inquiry dl dd.add{
+    }
+
+    #inquiry dl dd.tel{
+    }
+	
+    #inquiry dl dd.tel .telBox{	
+			  font-size: 12px !important;
+    }	
+
+    #inquiry dl dd.tel .mail{
+    }
+
+    #inquiry dl dd.fax{
+    }
+
+}
+
+

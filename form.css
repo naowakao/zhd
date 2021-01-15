@@ -1,0 +1,804 @@
+@charset "utf-8";
+
+/*-All Media-*/
+/***********************************
+Templates CSS
+************************************/
+
+/*Utility*/
+/*角R*/
+.radius{
+	-moz-border-radius: 5px;/* Firefox用 */
+	-webkit-border-radius: 5px;/* Safari,Google Chrome用 */
+	-khtml-border-radius: 5px;/* for Old Safari, KHTML */
+	border-radius: 5px;/* for CSS3 */
+	position:relative;/* PIEを動作させるために追加 */
+}
+
+/*Float Set*/
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+/*Float clear*/
+.clear{
+	clear:both;
+	float:none;
+}
+
+/*スマホの文字サイズ自動変更無効*/
+html,body{
+  -webkit-text-size-adjust: 100%;
+}
+
+h2{
+	color: #F69;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2 span{
+	padding-left: 10px;
+}
+
+span.s-txt {
+  font-feature-settings:"palt";
+  padding-left: 0;
+  font-weight: normal;
+} 
+
+/*input*/
+input.ti{
+	-moz-border-radius: 5px;/* Firefox用 */
+	-webkit-border-radius: 5px;/* Safari,Google Chrome用 */
+	-khtml-border-radius: 5px;/* for Old Safari, KHTML */
+	border-radius: 5px;/* for CSS3 */
+	position:relative;/* PIEを動作させるために追加 */
+	margin: 0px;
+	border: 1px solid #EAEAEA;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+input.sl{
+	width: 100%;
+}
+
+input.ss{
+	width: 40%;
+}
+
+textarea{
+	-moz-border-radius: 5px;/* Firefox用 */
+	-webkit-border-radius: 5px;/* Safari,Google Chrome用 */
+	-khtml-border-radius: 5px;/* for Old Safari, KHTML */
+	border-radius: 5px;/* for CSS3 */
+	position:relative;/* PIEを動作させるために追加 */
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #EAEAEA;
+	resize:none;
+}
+
+#btnBox{
+	width: 100%;
+	text-align: center;
+}
+
+#btnBox li{
+	display: inline;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#btnBox input{
+	-moz-border-radius: 5px;/* Firefox用 */
+	-webkit-border-radius: 5px;/* Safari,Google Chrome用 */
+	-khtml-border-radius: 5px;/* for Old Safari, KHTML */
+	border-radius: 5px;/* for CSS3 */
+	behavior: url(border-radius.htc);/* CSS3 PIE [IE用] */
+	position:relative;/* PIEを動作させるために追加 */
+	color: #FFF;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor:pointer;
+	background: linear-gradient(#60bbfc, #6093fc);
+	background-image: url(../img/bgBtn.png);
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+}
+
+#btnBox input:hover{
+	opacity:0.5;
+}
+
+.error{
+	color: #F00;
+}
+
+#btnBox li.comp input{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+/***********************************
+PDF DLボックス
+************************************/
+
+.pdf-box {
+}
+
+.pdf-box a.flyer-link,
+.pdf-box a.pdf-link {
+  display: block;
+  text-align: center;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  -khtml-border-radius:10px;
+  border-radius:10px;
+  position:relative;
+  max-width: 450px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #002b69;
+  text-decoration: none !important;
+}
+
+.pdf-box .txt-box {
+  display: block;
+  float: none !important;
+  text-align: center;
+}
+
+.pdf-box.bdf_dlbox-01 a.flyer-link {
+  /*background-color: #e62f82;*/
+/*
+  background: rgb(253,208,32);
+  background: linear-gradient(90deg, rgba(253,208,32,1) 0%, rgba(236,221,161,1) 50%, rgba(253,208,32,1) 100%);
+*/
+  background-color: #ffff00;
+  box-shadow: 2px 2px 4px #c1c1c1;
+  color: #000;
+  font-weight: bold;
+	
+}
+
+.pdf-box.bdf_dlbox-01 a.present-link {
+  color: #c78e20;
+  text-align: center;
+  display: block;
+}
+
+.pdf-box.bdf_dlbox-02 {
+  border: 1px solid #c2840b;
+  background-color: #fff8e5;
+}
+
+.pdf-box.bdf_dlbox-02 .img-box,
+.pdf-box.bdf_dlbox-02 .txt-box {
+  max-width: 920px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.pdf-box.bdf_dlbox-02 h3 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #da020d;
+}
+
+.pdf-box.bdf_dlbox-02 p span {
+  display: block;
+  color: #da020d;
+  font-weight: bold;
+}
+
+.pdf-box.bdf_dlbox-02 a {
+  background-color: #c2840b;
+}
+
+
+
+
+
+/* PC用 */
+@media print, screen and (min-width:769px){
+  
+  .pdf-box a.flyer-link,
+  .pdf-box a.pdf-link {
+    font-size: 16px;
+    line-height: 70px;
+  }
+  
+  .pdf-box a:hover {
+    opacity: .5;
+  }
+  
+  .pdf-box.bdf_dlbox-01 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }  
+   
+  .pdf-box.bdf_dlbox-01 span {
+    padding-top: 10px;
+    display:block;
+  }  
+   
+  .pdf-box.bdf_dlbox-01 .present-link {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 16px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 {
+    margin-top: 70px;
+  } 
+  
+  .pdf-box.bdf_dlbox-02 h3 {
+    font-size: 34px;
+    line-height: 90px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 .img-box {
+    margin-bottom: 35px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 a {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .pdf-box .txt-box {
+    padding-top: 20px;
+    padding-bottom: 65px;
+  }
+  
+  input.sss{
+    width: 20% !important;
+  }
+  
+}
+
+/* SP用 */
+@media print, screen and (max-width:769px){
+  
+  .pdf-box a.flyer-link,
+  .pdf-box a.pdf-link {
+    font-size: 13px;
+    line-height: 50px;
+  }
+  
+  .pdf-box .txt-box {
+    font-size: 12px;
+  }
+  
+  .pdf-box.bdf_dlbox-01 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .pdf-box.bdf_dlbox-01 span {
+    padding-top: 15px;
+    display: block;
+  }     
+  
+  .pdf-box.bdf_dlbox-01 .present-link {
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 h3 {
+    font-size: 17px;
+    margin-top: 15px;    
+    margin-bottom: 15px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 .img-box {
+    margin-bottom: 10px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 a {
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .pdf-box.bdf_dlbox-02 .sp {
+    display: block !important;
+  }  
+  
+  .pdf-box .txt-box {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  
+}
+
+  
+  
+/***********************************
+content
+************************************/
+
+article#formBox{
+}
+
+article#formBox table{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+article#formBox table th{
+}
+
+article#formBox table th strong{
+	font-size: 12px;
+	color: #F00;
+	font-weight: normal;
+}
+
+article#formBox table td{
+}
+
+article#formBox table td span{
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+article#formBox table td.cf_cp span.price:before{
+	content: "● " ;
+}
+
+article#formBox table .gry{
+	background-color: #EEE;
+}
+
+
+/* PC用 */
+@media print, screen and (min-width:769px){
+
+h2{
+	font-size: 18px;
+}
+
+h2 span{
+	font-size: 14px;
+}
+
+.sp{
+	display: none;
+}
+
+.pc{
+	display: block;
+}
+
+/***********************************
+#formBox
+************************************/
+
+article#formBox{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+}
+
+/*2プラン用*/
+.tplan{
+	margin-top: 0px;
+}
+
+.tplan h2 br{
+	display: none;
+}
+
+article#formBox .planbox{
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+article#formBox .planbox li{
+	float: left;
+	display: block;
+	width: 50%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+article#formBox .planbox li.st{
+	float: left;
+	display: block;
+	width: 14% !important;
+}
+
+article#formBox .planbox li.lin{
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+
+article#formBox .planbox span.planN{
+	display: none;
+}
+
+article#formBox .planbox span.specS{
+	font-weight: bold;
+	color: #369;
+}
+
+article#formBox .planbox span.specP{
+	font-weight: bold;
+	color: #F60;
+}
+
+article#formBox table th{
+	padding: 15px;
+	width: 100px;
+}
+
+article#formBox table td{
+	padding: 15px;
+}
+
+article#formBox .time{
+	line-height: 22px;	
+}
+
+article#formBox .ico input{
+	width: 200px;
+	margin-right: 15px;
+}
+
+.plTitle{
+	color: #000;
+	font-size: 14px;
+	display: block;
+	font-weight: bold;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #F60;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+.planbox span{
+}
+
+input.ti{
+	width: 40%;
+}
+
+textarea{
+	height: 100px;
+}
+
+#btnBox input{
+	width: 300px;
+	font-size: 25px;
+	line-height: 60px;
+}
+
+#privacy{
+	line-height: 24px;
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#privacy p{
+	display: block;
+	text-align: center;
+}
+  
+#privacy a {
+  color: #0a75d8;
+}
+
+/*170701家づくり応援キャンペーン見出し
+.p01 li,
+.p02 li,
+.p03 li,
+.p04 li{
+	width: 30% !important;
+}*/
+
+/*170701家づくり応援キャンペーン見出し*/
+.p01 li,
+.p02 li,
+.p03 li,
+.p04 li{
+	width: 100% !important;
+}
+
+#cpst01 span,
+#cpst02 span{
+	font-weight: normal;
+	/* color: #666; */
+	display: inline-block !important;
+}
+
+}
+
+/* スマートフォン用 */
+@media print, screen and (max-width:769px){
+
+h2{
+	font-size: 14px;
+	padding-top: 0px;
+	letter-spacing: -1px;
+}
+
+h2 span{
+	font-size: 12px;
+}
+  
+h2 span.s-txt{
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.sp{
+	display: block;
+}
+
+.pc{
+	display: none;
+}
+
+/***********************************
+#formBox
+************************************/
+
+article#formBox{
+	padding: 10px;
+}
+
+article#formBox h1{
+	display: block;
+	margin-bottom: 15px;
+}
+
+/*2プラン用*/
+.tplan{
+}
+
+.tplan h2{
+	margin-bottom: 0px !important;
+	padding-top: 10px;
+	padding-bottom: 0px !important;
+	padding-right: 2.5px;
+	padding-left: 2.5px;
+}
+
+.tplan h2 br{
+	display: block;
+}
+
+article#formBox .ico input{
+	margin-bottom: 5px;
+}
+
+article#formBox .planbox{
+	overflow: hidden;
+	position: relative;
+	letter-spacing: -1px;
+	width: 95%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+}
+
+article#formBox .planbox li{
+	/*float: left;*/
+	display: block;
+	/*width: 40%;*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 2%;
+	padding-left: 0px;
+	/*text-indent: -5%;*/
+}
+
+article#formBox .planbox li input{
+	float: left;
+}
+
+
+article#formBox .planbox li.st{
+	display: block;
+	width: 100% !important;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #666;
+}
+
+article#formBox .planbox span.planN{
+	display: none;
+}
+
+article#formBox .planbox span.specS{
+	font-weight: bold;
+	color: #369;
+	font-size: 10px;
+}
+
+article#formBox .planbox span.specP{
+	font-weight: bold;
+	color: #F60;
+	font-size: 10px;
+}
+
+article#formBox .planbox span.price{
+	display: block;
+	padding-left: 1.5em;
+	line-height: 14px;
+}
+
+article#formBox table th{
+	padding: 5px;
+	width: 90px;
+}
+
+article#formBox table td{
+	padding: 5px;
+	line-height: 20px;
+}
+
+input.ti{
+	width: 95%;
+}
+
+textarea{
+	height: 50px;
+}
+
+#btnBox input{
+	width: 40%;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+#privacy{
+	line-height: 24px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+#privacy p{
+	display: block;
+	margin-bottom: 15px;
+}
+
+.plTitle{
+	color: #000;
+	font-size: 12px;
+	display: block;
+	font-weight: bold;
+	padding-right: 0px !important;
+	padding-left: 10px !important;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #F60;
+	line-height: 20px;
+	margin-top: 5px;
+}
+
+/*170701家づくり応援キャンペーン見出し*/
+.p01 li,
+.p02 li,
+.p03 li,
+.p04 li{
+	width: 90% !important;
+	text-decoration: none;
+}
+
+}
+
+#cpst01,
+#cpst02,
+#cpst03,
+#cpst04{
+	display: block;
+	font-weight: bold;
+}
+
+#cpst01{
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #c30000;
+	color: #c30000;
+}
+
+#cpst01 span,
+#cpst02 span{
+	font-weight: normal;
+	/* color: #666; */
+	display: block;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+#cpst02{
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #006ab4;
+	color: #006ab4;
+}
+
+#cpst03{
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #1EB9EE;
+	color: #1EB9EE;
+}
+
+#cpst04{
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #8EC555;
+	color: #8EC555;
+}
+
+
+/*201120キャンペーン用*/
+.special{
+    width: 100%;
+	height: 0px;
+	text-align: center;
+	margin: -28px;
+}
+
+.title{
+	background-color: #ffff00;
+	text-align: center;
+	margin: 0 auto;
+	padding: 60px 30px 30px;
+}
+
+.title-inner{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 23px;
+}
+
+@media screen and (max-width:768px) {
+	.title-inner{
+		display: block;		
+	}
+}
+
+
+
